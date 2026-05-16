@@ -16,7 +16,7 @@ function MentorshipRequests() {
     try {
 
       const response = await axios.get(
-        " https://alumnicollab.onrender.com/api/mentorship"
+        "https://alumnicollab.onrender.com/api/mentorship"
       );
 
       setRequests(response.data);
@@ -36,7 +36,7 @@ function MentorshipRequests() {
   try {
 
     await axios.put(
-      ` https://alumnicollab.onrender.com/api/mentorship/update/${id}`,
+      "https://alumnicollab.onrender.com/api/mentorship/update/${id}",
       { status }
     );
 

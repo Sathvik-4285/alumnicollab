@@ -57,39 +57,8 @@ app.get("/", (req, res) => {
   res.send("AlumniCollab Backend Running");
 });
 
-const PORT = 5000;
-app.post("/api/auth/login", async (req, res) => {
+const PORT = process.env.PORT || 5000;
 
-  const { email, password } = req.body;
-
-  try {
-
-    const user = await User.findOne({ email });
-
-    if (!user) {
-      return res.status(400).json({
-        message: "User not found"
-      });
-    }
-
-    const isMatch = await bcrypt.compare(password, user.password);
-
-    if (!isMatch) {
-      return res.status(400).json({
-        message: "Invalid password"
-      });
-    }
-
-    res.json({
-      message: "Login successful",
-      user
-    });
-
-  } catch (error) {
-    console.log(error);
-  }
-
-});
 
 const http = require("http");
 

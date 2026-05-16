@@ -32,7 +32,7 @@ function AIAssistant({ user }) {
 
     const response =
       await axios.post(
-        " https://alumnicollab.onrender.com/api/ai/chat",
+        "https://alumnicollab.onrender.com/api/ai/chat",
         {
           message: question,
         }

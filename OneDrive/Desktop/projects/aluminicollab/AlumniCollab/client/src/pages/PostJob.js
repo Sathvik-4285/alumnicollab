@@ -27,7 +27,7 @@ function PostJob() {
     try {
 
       const response = await axios.post(
-        " https://alumnicollab.onrender.com/api/jobs/create",
+        "https://alumnicollab.onrender.com/api/jobs/create",
         jobData
       );
 

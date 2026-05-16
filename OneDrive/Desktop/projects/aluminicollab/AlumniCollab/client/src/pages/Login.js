@@ -22,9 +22,9 @@ function Login() {
 
   try {
 
-    const response =
+        const response =
       await axios.post(
-        "https://alumnicollab.onrender.com/",
+    "https://alumnicollab.onrender.com/api/auth/login",
         {
           email: formData.email,
           password: formData.password,
@@ -64,7 +64,9 @@ function Login() {
       error
     );
 
-    alert("Login failed");
+    console.log(error.response.data);
+
+    alert(error.response.data.message);
 
   }
 

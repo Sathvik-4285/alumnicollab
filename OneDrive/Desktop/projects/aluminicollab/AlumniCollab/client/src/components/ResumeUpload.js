@@ -36,12 +36,12 @@ function ResumeUpload() {
   try {
 
     const response = await axios.post(
-      " https://alumnicollab.onrender.com/api/resume/upload",
+      "https://alumnicollab.onrender.com/api/resume/upload",
       formData
     );
     const analysis =
   await axios.post(
-    " https://alumnicollab.onrender.com/api/resume/analyze",
+    "https://alumnicollab.onrender.com/api/resume/analyze",
     {
       path:
         response.data.file.path,

@@ -34,22 +34,22 @@ function AdminPanel() {
 
       const users =
         await axios.get(
-          " https://alumnicollab.onrender.com/api/admin/users"
+          "https://alumnicollab.onrender.com/api/admin/users"
         );
 
       const jobs =
         await axios.get(
-          " https://alumnicollab.onrender.com/api/jobs"
+          "https://alumnicollab.onrender.com/api/jobs"
         );
 
       const applications =
         await axios.get(
-          " https://alumnicollab.onrender.com/api/applications"
+          "https://alumnicollab.onrender.com/api/applications"
         );
 
       const mentorships =
         await axios.get(
-          " https://alumnicollab.onrender.com/api/mentorship"
+          "https://alumnicollab.onrender.com/api/mentorship"
         );
 
 

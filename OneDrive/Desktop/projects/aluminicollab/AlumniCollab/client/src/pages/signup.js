@@ -28,7 +28,7 @@ function Signup() {
   try {
 
     const response = await axios.post(
-      " https://alumnicollab.onrender.com/api/auth/signup",
+      "https://alumnicollab.onrender.com/api/auth/signup",
       formData
     );
 
