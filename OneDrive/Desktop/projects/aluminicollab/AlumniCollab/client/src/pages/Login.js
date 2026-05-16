@@ -24,7 +24,7 @@ function Login() {
 
     const response =
       await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://alumnicollab.onrender.com/",
         {
           email: formData.email,
           password: formData.password,
