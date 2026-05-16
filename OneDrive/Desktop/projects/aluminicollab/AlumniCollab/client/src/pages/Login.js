@@ -57,18 +57,20 @@ function Login() {
 
     navigate("/dashboard");
 
-  } catch (error) {
+  }  catch (error) {
 
-    console.log(
-      "LOGIN ERROR:",
-      error
-    );
+  console.log("LOGIN ERROR:", error);
 
-    console.log(error.response.data);
+  console.log(
+    error.response?.data
+  );
 
-    alert(error.response.data.message);
+  alert(
+    error.response?.data?.message ||
+    "Login failed"
+  );
 
-  }
+}
 
 };
 
