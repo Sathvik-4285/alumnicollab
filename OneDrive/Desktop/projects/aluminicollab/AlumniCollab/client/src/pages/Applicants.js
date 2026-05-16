@@ -17,7 +17,7 @@ function Applicants() {
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/api/applications"
+        " https://alumnicollab.onrender.com/api/applications"
       );
 
       setApplications(response.data);

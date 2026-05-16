@@ -18,7 +18,7 @@ const askAI = async () => {
 
     const response =
       await axios.post(
-        "http://localhost:5000/api/ai/chat",
+        " https://alumnicollab.onrender.com/api/ai/chat",
         {
           message: question,
         }

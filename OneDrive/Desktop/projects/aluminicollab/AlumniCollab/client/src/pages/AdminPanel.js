@@ -34,22 +34,22 @@ function AdminPanel() {
 
       const users =
         await axios.get(
-          "http://localhost:5000/api/admin/users"
+          " https://alumnicollab.onrender.com/api/admin/users"
         );
 
       const jobs =
         await axios.get(
-          "http://localhost:5000/api/jobs"
+          " https://alumnicollab.onrender.com/api/jobs"
         );
 
       const applications =
         await axios.get(
-          "http://localhost:5000/api/applications"
+          " https://alumnicollab.onrender.com/api/applications"
         );
 
       const mentorships =
         await axios.get(
-          "http://localhost:5000/api/mentorship"
+          " https://alumnicollab.onrender.com/api/mentorship"
         );
 
 

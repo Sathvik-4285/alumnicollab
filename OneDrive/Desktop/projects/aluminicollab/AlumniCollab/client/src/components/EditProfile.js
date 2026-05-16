@@ -15,7 +15,7 @@ function EditProfile() {
   try {
 
     const response = await axios.put(
-      `http://localhost:5000/api/profile/update/${user._id}`,
+      ` https://alumnicollab.onrender.com/api/profile/update/${user._id}`,
       profile
     );
 
